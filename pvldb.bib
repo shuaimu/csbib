@@ -1,8 +1,8 @@
 
-@inproceedings{kallman08hstore,
+@article{kallman08hstore,
   ids={hstore:vldb08i},
   title={H-store: a high-performance, distributed main memory transaction processing system},
-  author={Kallman, Robert and Kimura, Hideaki and Natkins, Jonathan and Pavlo, Andrew and Rasin, Alexander and Zdonik, Stanley and Jones, Evan PC and Madden, Samuel and Stonebraker, Michael and Zhang, Yang and others},
+  author={Kallman, Robert and Kimura, Hideaki and Natkins, Jonathan and Pavlo, Andrew and Rasin, Alexander and Zdonik, Stanley and Jones, Evan PC and Madden, Samuel and Stonebraker, Michael and Zhang, Yang},
   journal=pvldb,
   year={2008},
   month = aug,
@@ -32,14 +32,22 @@
 }
 
 @article{ren12lightweight,
- author = {Ren, Kun and Thomson, Alexander and Abadi, Daniel J.},
- title = {Lightweight locking for main memory database systems},
- journal = pvldb,
- volume = {6},
- number = {2},
- month = dec,
- year = {2012},
+  author = {Ren, Kun and Thomson, Alexander and Abadi, Daniel J.},
+  title = {Lightweight locking for main memory database systems},
+  journal = pvldb,
+  volume = {6},
+  number = {2},
+  month = dec,
+  year = {2012},
 } 
+
+@article{ports12serializable,
+  title = {Serializable Snapshot Isolation in {PostgreSQL}},
+  author = {Dan R. K. Ports and Kevin Grittner},
+  journal = pvldb,
+  year = 2012,
+  month = aug,
+}
 
 @article{mahmoud13low,
   ids={replicatedcommit:vldb13},
@@ -63,7 +71,6 @@
   month = mar,
 }
 
-
 @article{bailis13highly,
   author = {Bailis, Peter and Davidson, Aaron and Fekete, Alan and Ghodsi, Ali and Hellerstein, Joseph M. and Stoica, Ion},
   title = {Highly available transactions: virtues and limitations},
@@ -84,6 +91,14 @@
   year = {2014},
 } 
 
+@article{ren14evaluation,
+  title = {An evaluation of the advantages and disadvantages of deterministic database systems},
+  author = {Kun Ren and Alexander Thomson and Daniel J. Abadi},
+  journal = VLDB,
+  year = 2014,
+  month = sep,
+}
+
 @article{faleiro15rethinking,
   author = {Faleiro, Jose M. and Abadi, Daniel J.},
   title = {Rethinking serializable multiversion concurrency control},
@@ -102,4 +117,12 @@
   volume = {10},
   number = {7},
   month = mar,
+}
+
+@article{faleiro17high,
+  title = {High Performance Transactions via Early Write Visibility},
+  author = {Jose M. Faleiro and Daniel J. Abadi and Joseph M. Hellerstein},
+  journal = pvldb,
+  year = 2017,
+  month = sep,
 }
