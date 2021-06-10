@@ -36,6 +36,14 @@
   month = dec,
 } 
 
+@inproceedings{barham04using,
+  author = {Paul Barham and Austin Donnelly and Rebecca Isaacs and Richard Mortier},
+  title = "{Using Magpie for request extraction and workload modelling}",
+  year = {2004},
+  booktitle = osdi,
+  month = DEC,
+}
+
 @inproceedings{cowling06hq,
   title={HQ replication: A hybrid quorum protocol for byzantine fault tolerance},
   author={Cowling, James and Myers, Daniel and Liskov, Barbara and Rodrigues, Rodrigo and Shrira, Liuba},
@@ -141,12 +149,19 @@
 @inproceedings{corbett12spanner,
   ids={spanner:osdi12},
   title={Spanner: {Google}'s globally distributed database},
-  author={Corbett, James C and Dean, Jeffrey and Epstein, Michael and Fikes, Andrew and Frost, Christopher and Furman, JJ and Ghemawat, Sanjay and Gubarev, Andrey and Heiser, Christopher and Hochschild, Peter and others},
+  author = {Corbett, James C. and Dean, Jeffrey and Epstein, Michael and Fikes, Andrew and Frost, Christopher and Furman, J. J. and Ghemawat, Sanjay and Gubarev, Andrey and Heiser, Christopher and Hochschild, Peter and Hsieh, Wilson and Kanthak, Sebastian and Kogan, Eugene and Li, Hongyi and Lloyd, Alexander and Melnik, Sergey and Mwaura, David and Nagle, David and Quinlan, Sean and Rao, Rajesh and Rolig, Lindsay and Saito, Yasushi and Szymaniak, Michal and Taylor, Christopher and Wang, Ruth and Woodford, Dale},
   booktitle=osdi,
   year={2012},
   month = oct,
 }
 
+@inproceedings{kapritsos12all,
+  title={All about eve: Execute-verify replication for multi-core servers},
+  author={Kapritsos, Manos and Wang, Yang and Quema, Vivien and Clement, Allen and Alvisi, Lorenzo and Dahlin, Mike},
+  booktitle=osdi,
+  year={2012},
+  month=oct,
+}
 @inproceedings{belay12dune,
   title={Dune: safe user-level access to privileged CPU features},
   author={Belay, Adam and Bittau, Andrea and Mashtizadeh, Ali Jos{\'e} and Terei, David and Mazi{\`e}res, David and Kozyrakis, Christos},
@@ -274,7 +289,7 @@
 }
 
 @inproceedings{kalia16fasst,
-  title={FaSST: Fast, Scalable and Simple Distributed Transactions with Two-Sided ($\{$RDMA$\}$) Datagram RPCs},
+  title={FaSST: Fast, Scalable and Simple Distributed Transactions with Two-Sided {(RDMA)} Datagram {RPCs}},
   author={Kalia, Anuj and Kaminsky, Michael and Andersen, David G},
   booktitle=osdi,
   year={2016},
@@ -305,3 +320,34 @@
   month=nov,
 }
 
+@inproceedings{ngo20tolerating,
+   author = {Khiem Ngo and Siddhartha Sen and Wyatt Lloyd},
+   title = "{Tolerating Slowdowns in Replicated State Machines using Copilots}",
+   booktitle = osdi,
+   month =  nov,
+   year =  2020,
+}
+
+@inproceedings {spaziani20hxdp,
+    author = {Marco Spaziani Brunella and Giacomo Belocchi and Marco Bonola and Salvatore Pontarelli and Giuseppe Siracusano and Giuseppe Bianchi and Aniello Cammarano and Alessandro Palumbo and Luca Petrucci and Roberto Bifulco},
+    title = {hXDP: Efficient Software Packet Processing on {FPGA} NICs},
+    booktitle = osdi,
+    year = {2020},
+    month = nov
+}
+
+@inproceedings {lin20panic,
+    author = {Jiaxin Lin and Kiran Patel and Brent E. Stephens and Anirudh Sivaraman and Aditya Akella},
+    title = {{PANIC}: A High-Performance Programmable {NIC} for Multi-tenant Networks},
+    booktitle = osdi,
+    year = {2020},
+    month = nov
+}
+
+@inproceedings{aguilera20microsecond,
+  title={Microsecond consensus for microsecond applications},
+  author={Aguilera, Marcos K and Ben-David, Naama and Guerraoui, Rachid and Marathe, Virendra J and Xygkis, Athanasios and Zablotchi, Igor},
+  booktitle=osdi,
+  year={2020},
+  month = nov,
+}

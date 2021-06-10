@@ -1,3 +1,11 @@
+@article{schneider83failstop,
+  title={Fail-stop processors},
+  author={Schneider, Fred B},
+  journal={Digest of Papers from Spring CompCon},
+  volume={83},
+  year={1983},
+}
+
 @phdthesis{adya99weak,
   author = {Adya, Atul},
   title = {Weak Consistency: A Generalized Theory and Optimistic Implementations
@@ -10,6 +18,14 @@
   author={McKenney, Paul E. and Appavoo, Jonathan and Kleen, Andi and Krieger, Orran and Russell, Rusty and Sarma, Dipankar and Soni, Maneesh},
   booktitle=ols,
   year = 2001,
+  month = jul,
+}
+
+@inproceedings{dabek02event,
+  title={Event-driven programming for robust software},
+  author={Dabek, Frank and Zeldovich, Nickolai and Kaashoek, Frans and Mazieres, David and Morris, Robert},
+  booktitle={Proceedings of the 10th Workshop on ACM SIGOPS European Workshop},
+  year={2002},
   month = jul,
 }
 
@@ -39,15 +55,6 @@
   month = aug,
 }
 
-@article{hardy88confused,
-  author = {Hardy, Norm},
-  title = {The confused deputy: (or why capabilities might have been invented)},
-  journal = osr,
-  volume = {22},
-  number = {4},
-  month = oct,
-  year = {1988},
-} 
 
 @article{weihl88commutativity,
   title = {Commutativity-Based Concurrency Control for Abstract Data Types},
@@ -65,15 +72,6 @@
   booktitle={In Proceedings of the USENIX Workshop on Micro-kernels and Other Kernel Architectures},
   year={1992}
 }
-
-@inproceedings{bowers09hail,
-  ids={hail:ccs09},
-  author = {Bowers, Kevin D. and Juels, Ari and Oprea, Alina},
-  title = {{HAIL: a high-availability and integrity layer for cloud storage}},
-  booktitle = ccs,
-  year = {2009},
-  month = nov,
-} 
 
 @inproceedings{golan11automatic,
   title={Automatic fine-grain locking using shape properties},
@@ -142,6 +140,22 @@
   month = jun,
 }
 
+@inproceedings{cooper10benchmarking,
+  author = {Cooper, Brian F. and Silberstein, Adam and Tam, Erwin and Ramakrishnan, Raghu and Sears, Russell},
+  title = {Benchmarking Cloud Serving Systems with {YCSB}},
+  booktitle = socc,
+  year = {2010},
+  month = jun,
+}
+
+@inproceedings{do13limplock,
+  author = {Do, Thanh and Hao, Mingzhe and Leesatapornwongsa, Tanakorn and Patana-anake, Tiratat and Gunawi, Haryadi S.},
+  title = {Limplock: Understanding the Impact of Limpware on Scale-out Cloud Systems},
+  year = {2013},
+  booktitle = socc,
+  month = oct,
+}
+
 @inproceedings{moraru14paxos,
   title={Paxos quorum leases: Fast reads without sacrificing writes},
   author={Moraru, Iulian and Andersen, David G and Kaminsky, Michael},
@@ -166,28 +180,20 @@
   month = jun,
 }
 
+@inproceedings{gueta19sbft,
+  title={{SBFT}: a scalable and decentralized trust infrastructure},
+  author={Gueta, Guy Golan and Abraham, Ittai and Grossman, Shelly and Malkhi, Dahlia and Pinkas, Benny and Reiter, Michael and Seredinschi, Dragos-Adrian and Tamir, Orr and Tomescu, Alin},
+  booktitle=dsn,
+  year={2019},
+  month=jun,
+}
+
 @inproceedings{lamport11byzantizing,
   title={Byzantizing {Paxos} by refinement},
   author={Lamport, Leslie},
   booktitle=disc,
   year={2011},
   month = july,
-}
-
-@inproceedings{shah07auditing,
- author = {Shah, Mehul A. and Baker, Mary and Mogul, Jeffrey C. and Swaminathan, Ram},
- title = {Auditing to keep online storage services honest},
- booktitle = hotos,
- year = {2007},
- month = may,
-} 
-
-@inproceedings{mcsherry15scalability,
-  title={Scalability! But at what COST?},
-  author={McSherry, Frank and Isard, Michael and Murray, Derek Gordon},
-  booktitle= hotos,
-  year={2015},
-  month = may,
 }
 
 @inproceedings{weatherspoon02erasure,
@@ -211,7 +217,6 @@
   journal={Information Systems},
   volume={24},
   number={8},
-  pages={673--698},
   year={1999},
   publisher={Elsevier}
 }
@@ -222,7 +227,6 @@
   journal=vldbj,
   volume={1},
   number={2},
-  pages={181--239},
   year={1992},
 }
 
@@ -244,7 +248,6 @@
   journal=sigact,
   volume={41},
   number={1},
-  pages={63--73},
   year={2010},
 }
 
@@ -261,7 +264,6 @@
   journal=tc,
   volume={100},
   number={5},
-  pages={391--399},
   year={1984},
 }
 
@@ -271,6 +273,26 @@
   booktitle={Proceedings of the First International Symposium on Databases in Parallel and Distributed Systems},
   year={1988},
 }
+
+@article{hardy88confused,
+  author = {Hardy, Norm},
+  title = {The confused deputy: (or why capabilities might have been invented)},
+  journal = osr,
+  volume = {22},
+  number = {4},
+  month = oct,
+  year = {1988},
+}
+
+@article{scales10design,
+  title={The design of a practical system for fault-tolerant virtual machines},
+  author={Scales, Daniel J and Nelson, Mike and Venkitachalam, Ganesh},
+  journal=osr,
+  volume={44},
+  number={4},
+  year={2010},
+  month=dec,
+} 
 
 @article{lorch06smart,
   title={The SMART way to migrate replicated stateful services},
@@ -285,9 +307,7 @@
   journal=osr,
   volume={44},
   number={2},
-  pages={35--40},
   year={2010},
-  publisher={ACM}
 }
 
 @book{weikum01transactional,
@@ -313,7 +333,6 @@
   journal=sicomp,
   volume={1},
   number={2},
-  pages={146--160},
   year={1972},
 }
 
@@ -334,7 +353,6 @@
   journal={IEEE Transactions on Dependable and Secure Computing},
   volume={12},
   number={4},
-  pages={472--484},
   year={2015},
   publisher={IEEE}
 }
@@ -461,6 +479,12 @@ title={{RUBiS}},
 howpublished={http://rubis.ow2.org/}
 }
 
+@misc{zookeeper-fpga-code,
+title={{FPGA ZooKeeper source code}},
+howpublished={https://github.com/fpgasystems/caribou}
+}
+
+
 @misc{voltdb,
 title={{VoltDB}},
 howpublished={http://www.voltdb.com/}
@@ -543,7 +567,6 @@ howpublished={http://www.tpc.org/tpcc/}
   journal={Electronics Letters},
   volume={3},
   number={22},
-  pages={159--160},
   year={1986}
 }
 
@@ -553,7 +576,6 @@ howpublished={http://www.tpc.org/tpcc/}
   journal={Optics Express},
   volume={19},
   number={17},
-  pages={16665--16671},
   year={2011},
   publisher={Optical Society of America}
 }
@@ -639,4 +661,316 @@ howpublished={http://www.tpc.org/tpcc/}
   number={2},
   year={2016},
   month=apr,
+}
+
+@inproceedings{bowers09hail,
+  ids={hail:ccs09},
+  author = {Bowers, Kevin D. and Juels, Ari and Oprea, Alina},
+  title = {{HAIL}: a high-availability and integrity layer for cloud storage},
+  booktitle = ccs,
+  year = {2009},
+  month = nov,
+} 
+
+@inproceedings{miller16honey,
+  title={The honey badger of BFT protocols},
+  author={Miller, Andrew and Xia, Yu and Croman, Kyle and Shi, Elaine and Song, Dawn},
+  booktitle=ccs,
+  year={2016},
+  month=oct
+}
+
+@inproceedings{duan18beat,
+  title={{BEAT}: Asynchronous BFT made practical},
+  author={Duan, Sisi and Reiter, Michael K and Zhang, Haibin},
+  booktitle=ccs,
+  year={2018},
+  month=oct,
+}
+
+@misc{diem,
+  title={{The Diem (formerly known as Libra) Cryptocurrency Project.}},
+  howpublished = {\url{https://www.diem.com/en-us/white-paper/}}
+}
+
+@misc{orleans,
+  title={The {Orleans} framework},
+  howpublished = {\url{https://dotnet.github.io/orleans/}}
+}
+
+@misc{rdsn,
+  title={{The rDSN framework}},
+  howpublished = {\url{https://github.com/microsoft/rDSN}}
+}
+
+@misc{seaster,
+  title={{The {Seaster} framework}},
+  howpublished = {\url{http://seastar.io/}}
+}
+
+@misc{shuai-ds-schedule,
+  title={Stony Brook CSE-535 Distributed Systems},
+  howpublished = {\url{http://mpaxos.com/teaching/ds/20fa/schedule.html}}
+}
+
+@misc{shuai-ds-lab,
+  title={Stony Brook CSE-535 Distributed Systems Lab},
+  howpublished = {\url{http://mpaxos.com/teaching/ds/20fa/labs.html}}
+}
+
+@inproceedings{dunlap08execution,
+  title={Execution replay of multiprocessor virtual machines},
+  author={Dunlap, George W and Lucchetti, Dominic G and Fetterman, Michael A and Chen, Peter M},
+  booktitle=vee,
+  year={2008},
+  month=mar,
+}
+
+@inproceedings{kokoris18omniledger,
+  title={Omniledger: A secure, scale-out, decentralized ledger via sharding},
+  author={Kokoris-Kogias, Eleftherios and Jovanovic, Philipp and Gasser, Linus and Gailly, Nicolas and Syta, Ewa and Ford, Bryan},
+  booktitle=oakland,
+  year={2018},
+}
+
+@inproceedings{gupta21rcc,
+  title={Rcc: Resilient concurrent consensus for high-throughput secure transaction processing},
+  author={Gupta, Suyash and Hellings, Jelle and Sadoghi, Mohammad},
+  booktitle=icde,
+  year={2021}
+}
+
+@book{lynch96distributed,
+  title={Distributed algorithms},
+  author={Lynch, Nancy A},
+  year={1996},
+  publisher={Elsevier}
+}
+
+@inproceedings{forencich20corundum,
+  title={Corundum: An Open-Source 100-Gbps NIC},
+  author={Alex Forencich and Alex C. Snoeren and George Porter and George Papen},
+  booktitle={The 28th IEEE International Symposium On Field-Programmable Custom Computing Machines (FCCM)},
+  year={2020},
+  month=may
+}
+
+@article{bosshart14p4,
+  author = {Bosshart, Pat and Daly, Dan and Gibb, Glen and Izzard, Martin and McKeown, Nick and Rexford, Jennifer and Schlesinger, Cole and Talayco, Dan and Vahdat, Amin and Varghese, George and Walker, David},
+  title = {P4: Programming Protocol-Independent Packet Processors},
+  year = {2014},
+  volume = {44},
+  number = {3},
+  journal = ccr,
+  month = jul,
+  pages = {87–95}
+}
+
+@inproceedings{cabal18configurable,
+  author = {Cabal, Jakub and Ben\'{a}\v{c}ek, Pavel and Kekely, Luk\'{a}\v{s} and Kekely, Michal and Pu\v{s}, Viktor and Ko\v{r}enek, Jan},
+  title = {Configurable FPGA Packet Parser for Terabit Networks with Guaranteed Wire-Speed Throughput},
+  year = {2018},
+  booktitle = {Proceedings of the 2018 ACM/SIGDA International Symposium on Field-Programmable Gate Arrays},
+  pages = {249–258}
+}
+
+@inproceedings{benacek17line,
+  author={P. {Benáček} and V. {Puš} and J. {Kořenek} and M. {Kekely}},  
+  booktitle={2017 27th International Conference on Field Programmable Logic and Applications (FPL)},
+  title={Line rate programmable packet processing in 100Gb networks},
+  year={2017}
+}
+
+@inproceedings{wang17p4fpga,
+  author = {Wang, Han and Soul\'{e}, Robert and Dang, Huynh Tu and Lee, Ki Suh and Shrivastav, Vishal and Foster, Nate and Weatherspoon, Hakim},
+  title = {{P4FPGA}: A Rapid Prototyping Framework for P4},
+  booktitle={ACM Symposium on SDN Research (SOSR)},
+  year = {2017},
+}
+
+@article{cao20p4,
+  author={Z. {Cao} and H. {Su} and Q. {Yang} and J. {Shen} and M. {Wen} and C. {Zhang}},
+  journal={IEEE Access},
+  title={P4 to FPGA-A Fast Approach for Generating Efficient Network Processors},
+  year={2020},
+  volume={8},
+  pages={23440-23456}
+}
+
+@inproceedings{ibanez19thep4,
+  author = {Ibanez, Stephen and Brebner, Gordon and McKeown, Nick and Zilberman, Noa},
+  title = {The P4->NetFPGA Workflow for Line-Rate Packet Processing},
+  booktitle = {Proceedings of the 2019 ACM/SIGDA International Symposium on Field-Programmable Gate Arrays},
+  year = {2019},
+  pages = {1–9}
+}
+
+@inproceedings{luinaud21design,
+  author = {Luinaud, Thomas and Santiago da Silva, Jeferson and Langlois, J.M. Pierre and Savaria, Yvon},
+  title = {Design Principles for Packet Deparsers on FPGAs},
+  year = {2021},
+  booktitle = {The 2021 ACM/SIGDA International Symposium on Field-Programmable Gate Arrays},
+  pages = {280–286}
+}
+
+@misc{mellanoxOvsHwOffload,
+  title={Hardware offloads: past present and future},
+  howpublished = {\url{https://www.openvswitch.org/support/ovscon2019/day2/0951-hw_offload_ovs_con_19-Oz-Mellanox.pdf}}
+}
+
+@inproceedings{dang15netpaxos,
+  author = {Dang, Huynh Tu and Sciascia, Daniele and Canini, Marco and Pedone, Fernando and Soul\'{e}, Robert},
+  title = {NetPaxos: Consensus at Network Speed},
+  year = {2015},
+  booktitle = {Proceedings of the 1st ACM SIGCOMM Symposium on Software Defined Networking Research}
+}
+
+@inproceedings{poke15dare,
+    author = {Poke, Marius and Hoefler, Torsten},
+    title = {DARE: High-Performance State Machine Replication on RDMA Networks},
+    year = {2015},
+    booktitle = {Proceedings of the 24th International Symposium on High-Performance Parallel and Distributed Computing},
+    pages = {107–118}
+}
+
+@inproceedings{wang17apus,
+    author = {Wang, Cheng and Jiang, Jianyu and Chen, Xusheng and Yi, Ning and Cui, Heming},
+    title = {APUS: Fast and Scalable Paxos on RDMA},
+    year = {2017},
+    booktitle = {Proceedings of the 2017 Symposium on Cloud Computing},
+    pages = {94-107}
+}
+
+@inproceedings{poke17allconcur,
+    author = {Poke, Marius and Hoefler, Torsten and Glass, Colin W.},
+    title = {AllConcur: Leaderless Concurrent Atomic Broadcast},
+    year = {2017},
+    booktitle = {Proceedings of the 26th International Symposium on High-Performance Parallel and Distributed Computing},
+    pages = {205–218}
+}
+
+@inproceedings{hoiland-jorgensen18express,
+    author = {H\o{}iland-J\o{}rgensen, Toke and Brouer, Jesper Dangaard and Borkmann, Daniel and Fastabend, John and Herbert, Tom and Ahern, David and Miller, David},
+    title = {The EXpress Data Path: Fast Programmable Packet Processing in the Operating System Kernel},
+    year = {2018},
+    booktitle = {Proceedings of the 14th International Conference on Emerging Networking EXperiments and Technologies},
+    pages = {54–66}
+}
+
+@misc{ebpf,
+    title={{eBPF}},
+    howpublished={\url{https://ebpf.io/}}
+}
+
+@inproceedings{arpaci-dusseau99cluster,
+    author = {Arpaci-Dusseau, Remzi H. and Anderson, Eric and Treuhaft, Noah and Culler, David E. and Hellerstein, Joseph M. and Patterson, David and Yelick, Kathy},
+    title = {Cluster I/O with River: Making the Fast Case Common},
+    year = {1999},
+    booktitle = {Proceedings of the Sixth Workshop on I/O in Parallel and Distributed Systems},
+    pages = {10–22}
+}
+
+@misc{sun88rpc,
+    author = {Sun Microsystems},
+    title = {RFC1057: RPC: Remote Procedure Call Protocol Specification},
+    year = {1988}
+}
+
+@misc{xilinx17axi,
+    author = {Xilinx},
+    title = {AXI Reference Guide},
+    year = {2017},
+    howpublished={\url{https://www.xilinx.com/support/documentation/ip_documentation/axi_ref_guide/latest/ug1037-vivado-axi-reference-guide.pdf}}
+}
+
+@misc{mellanoxfpga,
+    author = {NVIDIA},
+    title = {{NVIDIA Mellanox Innova-2 Flex Open Programmable SmartNIC}},
+    howpublished={\url{https://www.nvidia.com/en-us/networking/ethernet/innova-2-flex/}}
+}
+
+@misc{cavium,
+    author = {Marvell},
+    title = {{OCTEON TX2 LiquidIO III SmartNIC}},
+    howpublished={\url{https://www.marvell.com/products/data-processing-units.html}}
+}
+
+@inproceedings{li2017kv,
+  title={{KV-DIRECT}: High-performance in-memory key-value store with programmable {NIC}},
+  author={Li, Bojie and Ruan, Zhenyuan and Xiao, Wencong and Lu, Yuanwei and Xiong, Yongqiang and Putnam, Andrew and Chen, Enhong and Zhang, Lintao},
+  booktitle={Proceedings of the 26th Symposium on Operating Systems Principles},
+  pages={137--152},
+  year={2017}
+}
+
+@inproceedings{Putnam-catapult,
+ author = {Putnam, Andrew and Caulfield, Adrian M. and Chung, Eric S. and Chiou, Derek and Constantinides, Kypros and Demme, John and Esmaeilzadeh, Hadi and Fowers, Jeremy and Gopal, Gopi Prashanth and Gray, Jan and Haselman, Michael and Hauck, Scott and Heil, Stephen and Hormati, Amir and Kim, Joo-Young and Lanka, Sitaram and Larus, James and Peterson, Eric and Pope, Simon and Smith, Aaron and Thong, Jason and Xiao, Phillip Yi and Burger, Doug},
+ title = "A Reconfigurable Fabric for Accelerating Large-Scale Datacenter Services",
+ booktitle = {Proceeding of the 41st Annual International Symposium on Computer Architecuture},
+ series = {ISCA '14},
+ year = {2014},
+ isbn = {978-1-4799-4394-4},
+ location = {Minneapolis, Minnesota, USA},
+ pages = {13--24},
+ numpages = {12},
+ url = {http://dl.acm.org/citation.cfm?id=2665671.2665678},
+ acmid = {2665678},
+ publisher = {IEEE Press},
+ address = {Piscataway, NJ, USA},
+} 
+
+@inproceedings{brainwave,
+ author = {Jeremy Fowers and Kalin Ovtcharov and Michael Papamichael and Todd Massengill and Ming Liu and Daniel Lo and Shlomi Alkalay and Michael Haselman and Logan Adams and Mahdi Ghandi and Stephen Heil and Prerak Patel and Adam Sapek and Gabriel Weisz and Lisa Woods and Sitaram Lanka and Steven K. Reinhardt and Adrian M. Caulfield and Eric S. Chung and Doug Burger},
+ title = {A Configurable Cloud-Scale {DNN} Processor for Real-Time {AI}},
+ booktitle = {Proceedings of the 44th Annual International Symposium on Computer Architecture},
+ series = {ISCA '18},
+ year = {2018},
+}
+
+@InProceedings{szekeres2020meerkat,
+author = {Szekeres, Adriana and Whittaker, Michael and Sharma, Naveen Kr. and Li, Jialin and Krishnamurthy, Arvind and Ports, Dan R. K. and Zhang, Irene},
+title = {Meerkat: Scalable Replicated Transactions Following the Zero-Coordination Principle},
+organization = {ACM},
+booktitle = {Eurosys 2020},
+year = {2020},
+month = {April},
+abstract = {},
+url = {https://www.microsoft.com/en-us/research/publication/meerkat-scalable-replicated-transactions-following-the-zero-coordination-principle/},
+}
+
+@misc{dpdk,
+   title={Data Plane Development Kit ({DPDK})},
+   author={Linux Foundation},
+   url = {http://www.dpdk.org}
+}
+
+@article{van14vive,
+  title={Vive la diff{\'e}rence: Paxos vs. viewstamped replication vs. zab},
+  author={Van Renesse, Robbert and Schiper, Nicolas and Schneider, Fred B},
+  journal={IEEE Transactions on Dependable and Secure Computing},
+  volume={12},
+  number={4},
+  year={2014},
+}
+
+@article{roy17cyclone,
+  author    = {Amitabha Roy and
+               Subramanya R. Dulloor},
+  title     = {Cyclone: High Availability for Persistent Key Value Stores},
+  journal   = {CoRR},
+  volume    = {abs/1711.06964},
+  year      = {2017},
+  url       = {http://arxiv.org/abs/1711.06964},
+  archivePrefix = {arXiv},
+  eprint    = {1711.06964},
+  timestamp = {Mon, 13 Aug 2018 16:48:11 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-1711-06964.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{Katsarakis20hermes,
+  title={Hermes: A Fast, Fault-Tolerant and Linearizable Replication Protocol},
+  author={Katsarakis, Antonios and Gavrielatos, Vasilis and Katebzadeh, M.R. Siavash and Joshi, Arpit and Dragojevic, Aleksandar and Grot, Boris and Nagarajan, Vijay},
+  year={2020},
+  month = mar,
 }
