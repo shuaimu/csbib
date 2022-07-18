@@ -1,3 +1,12 @@
+
+
+@techreport{lampson76crash,
+  title={Crash recovery in a distributed system},
+  author={Lampson, Butler and Sturgis, H},
+  year={1976},
+  institution={Xerox PARC Research Report}
+}
+
 @article{schneider83failstop,
   title={Fail-stop processors},
   author={Schneider, Fred B},
@@ -71,6 +80,13 @@
   author={Bomberger, Alan C and Hardy, Norman and Peri, A and Charles, Frantz and Landau, R and Frantz, William S and Shapiro, Jonathan S and Hardy, Ann C},
   booktitle={In Proceedings of the USENIX Workshop on Micro-kernels and Other Kernel Architectures},
   year={1992}
+}
+
+@inproceedings{karger97consistent,
+  title={Consistent hashing and random trees: Distributed caching protocols for relieving hot spots on the world wide web},
+  author={Karger, David and Lehman, Eric and Leighton, Tom and Panigrahy, Rina and Levine, Matthew and Lewin, Daniel},
+  booktitle=stoc,
+  year={1997}
 }
 
 @inproceedings{golan11automatic,
@@ -193,7 +209,7 @@
   author={Lamport, Leslie},
   booktitle=disc,
   year={2011},
-  month = july,
+  month = jul,
 }
 
 @inproceedings{weatherspoon02erasure,
@@ -229,9 +245,6 @@
   number={2},
   year={1992},
 }
-
-}
-
 
 @article{lamport01paxos,
   title={{Paxos made simple}},
@@ -345,16 +358,6 @@
   number={2},
   year={1972},
 }
-
-@article{schneider90implementing,
- author = {Fred B. Schneider},
- title = {Implementing fault-tolerant services using the state machine approach: a tutorial},
- journal = csur,
- volume = {22},
- number = {4},
- month = Dec,
- year = {1990}
- }
 
 
 @article{van15vive,
@@ -663,6 +666,17 @@ howpublished={http://www.tpc.org/tpcc/}
   title={{The JanusDB project}},
   howpublished = {\url{https://github.com/nyu-news/janusdb}}
 }
+
+@misc{rocococode,
+  title={{The Rococo project}},
+  howpublished = {\url{https://github.com/shuaimu/rococo}}
+}
+
+@misc{cobracode,
+  title={{The Cobra project}},
+  howpublished = {\url{https://github.com/dbcobra/cobrahome}}
+}
+
 @article{dang16paxos,
   title={Paxos made switch-y},
   author={Dang, Huynh Tu and Canini, Marco and Pedone, Fernando and Soul{\'e}, Robert},
@@ -937,21 +951,35 @@ howpublished={http://www.tpc.org/tpcc/}
  year = {2018},
 }
 
-@InProceedings{szekeres2020meerkat,
-author = {Szekeres, Adriana and Whittaker, Michael and Sharma, Naveen Kr. and Li, Jialin and Krishnamurthy, Arvind and Ports, Dan R. K. and Zhang, Irene},
-title = {Meerkat: Scalable Replicated Transactions Following the Zero-Coordination Principle},
-organization = {ACM},
-booktitle = {Eurosys 2020},
-year = {2020},
-month = {April},
-abstract = {},
-url = {https://www.microsoft.com/en-us/research/publication/meerkat-scalable-replicated-transactions-following-the-zero-coordination-principle/},
-}
-
 @misc{dpdk,
    title={Data Plane Development Kit ({DPDK})},
    author={Linux Foundation},
    url = {http://www.dpdk.org}
+}
+
+@misc{epoll,
+   title={epoll(7) — {Linux} manual page},
+   url = {https://man7.org/linux/man-pages/man7/epoll.7.html}
+}
+
+@misc{libev,
+   title={libev},
+   url = {http://software.schmorp.de/pkg/libev.html}
+}
+
+@misc{libuv,
+   title={libuv},
+   url = {https://libuv.org/}
+}
+
+@misc{grpc,
+   title={{gRPC}},
+   url = {https://grpc.io/}
+}
+
+@misc{kqueue,
+   title={kqueue(2) - {OpenBSD} manual pages},
+   url = {https://man.openbsd.org/kqueue.2}
 }
 
 @article{van14vive,
@@ -978,11 +1006,25 @@ url = {https://www.microsoft.com/en-us/research/publication/meerkat-scalable-rep
   bibsource = {dblp computer science bibliography, https://dblp.org}
 }
 
-@inproceedings{Katsarakis20hermes,
-  title={Hermes: A Fast, Fault-Tolerant and Linearizable Replication Protocol},
-  author={Katsarakis, Antonios and Gavrielatos, Vasilis and Katebzadeh, M.R. Siavash and Joshi, Arpit and Dragojevic, Aleksandar and Grot, Boris and Nagarajan, Vijay},
-  year={2020},
-  month = mar,
+
+@article{yao2015dgcc,
+  title={Dgcc: A new dependency graph based concurrency control protocol for multicore database systems},
+  author={Yao, Chang and Agrawal, Divyakant and Chang, Pengfei and Chen, Gang and Ooi, Beng Chin and Wong, Weng-Fai and Zhang, Meihui},
+  journal={arXiv preprint arXiv:1503.03642},
+  year={2015}
+}
+
+@article{brewer17spanner,
+  title={Spanner, truetime and the cap theorem},
+  author={Brewer, Eric},
+  year={2017}
+}
+
+@inproceedings{dean08handling,
+  title={Handling large datasets at google: Current systems and future directions},
+  author={Dean, Jeff},
+  booktitle={Data-Intensive Computing Symposium},
+  year={2008}
 }
 
 @article{bernstein16developing,
