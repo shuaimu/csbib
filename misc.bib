@@ -97,6 +97,14 @@
   month = oct,
 }
 
+@inproceedings{lesani22c4,
+  title={C4: verified transactional objects},
+  author={Lesani, Mohsen and Xia, Li-yao and Kaseorg, Anders and Bell, Christian J and Chlipala, Adam and Pierce, Benjamin C and Zdancewic, Steve},
+  booktitle=oopsla,
+  year={2022},
+  month=apr,
+}
+
 
 @inproceedings{herlihy08transactional,
   title={Transactional boosting: a methodology for highly-concurrent transactional objects},
@@ -112,6 +120,22 @@
   booktitle=ppopp,
   year={2009},
   month = feb,
+}
+
+@inproceedings{elizarov19loft,
+  title={LOFT: lock-free transactional data structures},
+  author={Elizarov, Avner and Golan-Gueta, Guy and Petrank, Erez},
+  booktitle=ppopp,
+  year={2019},
+  month= feb,
+}
+
+@inproceedings{assa20nesting,
+  title={Nesting and composition in transactional data structure libraries},
+  author={Assa, Gal and Meir, Hagar and Golan-Gueta, Guy and Keidar, Idit and Spiegelman, Alexander},
+  booktitle=ppopp,
+  year={2020},
+  month=apr,
 }
 
 @inproceedings{mu14when,
@@ -145,63 +169,6 @@
     title = {Network coding for distributed storage systems},
     booktitle = infocom,
     year = {2007}
-}
-
-@inproceedings{abulibdeh10racs,
-  ids={racs:socc10},
-  author = {Abu-Libdeh, Hussam and Princehouse, Lonnie and Weatherspoon, Hakim},
-  title = {{RACS: a case for cloud storage diversity}},
-  booktitle = socc,
-  year = {2010},
-  month = jun,
-}
-
-@inproceedings{cooper10benchmarking,
-  author = {Cooper, Brian F. and Silberstein, Adam and Tam, Erwin and Ramakrishnan, Raghu and Sears, Russell},
-  title = {Benchmarking Cloud Serving Systems with {YCSB}},
-  booktitle = socc,
-  year = {2010},
-  month = jun,
-}
-
-@inproceedings{do13limplock,
-  author = {Do, Thanh and Hao, Mingzhe and Leesatapornwongsa, Tanakorn and Patana-anake, Tiratat and Gunawi, Haryadi S.},
-  title = {Limplock: Understanding the Impact of Limpware on Scale-out Cloud Systems},
-  year = {2013},
-  booktitle = socc,
-  month = oct,
-}
-
-@inproceedings{moraru14paxos,
-  title={Paxos quorum leases: Fast reads without sacrificing writes},
-  author={Moraru, Iulian and Andersen, David G and Kaminsky, Michael},
-  booktitle=socc,
-  year={2014},
-  month = nov,
-}
-
-@inproceedings{lamport04cheap,
-  title={Cheap {Paxos}},
-  author={Lamport, Leslie and Massa, Mike},
-  booktitle=dsn,
-  year={2004},
-  month = jun,
-}
-
-@inproceedings{junqueira11zab,
-  title={Zab: high-performance broadcast for primary-backup systems},
-  author={Junqueira, Flavio P and Reed, Benjamin C and Serafini, Marco},
-  booktitle=dsn,
-  year=2011,
-  month = jun,
-}
-
-@inproceedings{gueta19sbft,
-  title={{SBFT}: a scalable and decentralized trust infrastructure},
-  author={Gueta, Guy Golan and Abraham, Ittai and Grossman, Shelly and Malkhi, Dahlia and Pinkas, Benny and Reiter, Michael and Seredinschi, Dragos-Adrian and Tamir, Orr and Tomescu, Alin},
-  booktitle=dsn,
-  year={2019},
-  month=jun,
 }
 
 @inproceedings{lamport11byzantizing,
@@ -325,12 +292,22 @@
 }
 
 @article{lakshman10cassandra,
-  title={{Cassandra: a decentralized structured storage system}},
+  title={Cassandra: a decentralized structured storage system},
   author={Lakshman, Avinash and Malik, Prashant},
   journal=osr,
   volume={44},
   number={2},
   year={2010},
+}
+
+@article{dhawan17consistent,
+  title={Consistent clustered applications with {Corfu}},
+  author={Dhawan, Medhavi and Johal, Gurprit and Stabile, Jim and Brajkovic, Vjekoslav and Chang, James and Goyal, Kapil and James, Kevin and Lokhandwala, Zeeshan and Manzanilla, Anny Martinez and Michoud, Roger and others},
+  journal=osr,
+  volume={51},
+  number={1},
+  year={2017},
+  month=sep,
 }
 
 @book{weikum01transactional,
@@ -411,6 +388,16 @@
   number={2},
   year={2006},
   month = oct,
+}
+
+@article{agrawal87distributed,
+  title={Distributed optimistic concurrency control with reduced rollback},
+  author={Agrawal, Divyakant and Bernstein, Arthur J and Gupta, Pankaj and Sengupta, Soumitra},
+  journal=dc,
+  volume={2},
+  number={1},
+  year={1987},
+  month=mar,
 }
 
 @techreport{mazieres07paxos,
@@ -642,6 +629,14 @@ howpublished={http://www.tpc.org/tpcc/}
   howpublished = {\url{http://www.cockroachlabs.com/}}
 }
 
+@inproceedings{zhu16tight,
+  title={A tight space bound for consensus},
+  author={Zhu, Leqi},
+  booktitle=stoc,
+  year={2016},
+  month = jun,
+}
+
 @misc{onedrive,
   title={{OneDrive}},
   howpublished = {\url{http://www.onedrive.com/}}
@@ -851,19 +846,12 @@ howpublished={http://www.tpc.org/tpcc/}
 
 @inproceedings{poke15dare,
     author = {Poke, Marius and Hoefler, Torsten},
-    title = {DARE: High-Performance State Machine Replication on RDMA Networks},
+    title = {{DARE}: High-Performance State Machine Replication on {RDMA} Networks},
     year = {2015},
-    booktitle = {Proceedings of the 24th International Symposium on High-Performance Parallel and Distributed Computing},
-    pages = {107–118}
+    booktitle = hpdc,
+    month=jun,
 }
 
-@inproceedings{wang17apus,
-    author = {Wang, Cheng and Jiang, Jianyu and Chen, Xusheng and Yi, Ning and Cui, Heming},
-    title = {APUS: Fast and Scalable Paxos on RDMA},
-    year = {2017},
-    booktitle = {Proceedings of the 2017 Symposium on Cloud Computing},
-    pages = {94-107}
-}
 
 @inproceedings{poke17allconcur,
     author = {Poke, Marius and Hoefler, Torsten and Glass, Colin W.},
@@ -1021,7 +1009,7 @@ howpublished={http://www.tpc.org/tpcc/}
 }
 
 @inproceedings{dean08handling,
-  title={Handling large datasets at google: Current systems and future directions},
+  title={Handling large datasets at {Google}: Current systems and future directions},
   author={Dean, Jeff},
   booktitle={Data-Intensive Computing Symposium},
   year={2008}
@@ -1046,10 +1034,66 @@ howpublished={http://www.tpc.org/tpcc/}
   month=may
 }
 
-@inproceedings{dabek02event,
-  title={Event-driven programming for robust software},
-  author={Dabek, Frank and Zeldovich, Nickolai and Kaashoek, Frans and Mazieres, David and Morris, Robert},
-  booktitle={Proceedings of the 10th workshop on ACM SIGOPS European workshop},
-  year={2002},
-  month=jul
+@inproceedings{howard16flexible,
+  author = {Heidi Howard and Dahlia Malkhi and Alexander Spiegelman},
+  title =	{Flexible {Paxos}: Quorum Intersection Revisited},
+  booktitle =	{International Conference on Principles of Distributed Systems (OPODIS)},
+  year = {2016},
+  month=dec,
+}
+
+@inproceedings{rizvi17canopus,
+  title={Canopus: A scalable and massively parallel consensus protocol},
+  author={Rizvi, Sajjad and Wong, Bernard and Keshav, Srinivasan},
+  booktitle={International Conference on emerging Networking EXperiments and Technologies (CoNEXT)},
+  year={2017},
+  month=dec,
+}
+
+@article{zhang18lock,
+  title={Lock-free transactional transformation for linked data structures},
+  author={Zhang, Deli and Laborde, Pierre and Lebanoff, Lance and Dechev, Damian},
+  journal={ACM Transactions on Parallel Computing (TOPC)},
+  volume={5},
+  number={1},
+  year={2018},
+  month=jun,
+}
+
+@inproceedings{li19fpga,
+  title={FPGA-accelerated optimistic concurrency control for transactional memory},
+  author={Li, Zhaoshi and Liu, Leibo and Deng, Yangdong and Wang, Jiawei and Liu, Zhiwei and Yin, Shouyi and Wei, Shaojun},
+  booktitle=micro,
+  year={2019},
+  month=oct,
+}
+
+@inproceedings{minh08stamp,
+  title={STAMP: Stanford transactional applications for multi-processing},
+  author={Minh, Chi Cao and Chung, JaeWoong and Kozyrakis, Christos and Olukotun, Kunle},
+  booktitle={International Symposium on Workload Characterization (IISWC)},
+  year={2008},
+  month=sep,
+}
+
+@inproceedings{fiala12detection,
+  title={Detection and correction of silent data corruption for large-scale high-performance computing},
+  author={Fiala, David and Mueller, Frank and Engelmann, Christian and Riesen, Rolf and Ferreira, Kurt and Brightwell, Ron},
+  booktitle=sc,
+  year={2012},
+  month=nov,
+}
+
+@book{adkins20building,
+  title={Building Secure and Reliable Systems: Best Practices for Designing, Implementing, and Maintaining Systems},
+  author={Adkins, Heather and Beyer, Betsy and Blankinship, Paul and Lewandowski, Piotr and Oprea, Ana and Stubblefield, Adam},
+  year={2020},
+  publisher={O'Reilly Media}
+}
+
+@inproceedings{akkoorath16cure,
+  author =  {Deepthi Devaki Akkoorath and Alejandro Z. Tomsic and Manuel Bravo and Zhongmiao Li and Tyler Crain and Annette Bieniusa and Nuno Preguiça and Marc Shapiro},
+  title = {Cure: Strong semantics meets high availability and low latency},
+  booktitle = icdcs,
+  year =  {2016},
 }
