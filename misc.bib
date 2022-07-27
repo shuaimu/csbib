@@ -155,7 +155,7 @@
 }
 
 
-@inproceedings{liscov99providing,
+@inproceedings{liskov99providing,
   ids={clocc:ecoop99},
   title={Providing persistent objects in distributed systems},
   author={Liskov, Barbara and Castro, Miguel and Shrira, Liuba and Adya, Atul},
@@ -177,6 +177,14 @@
   booktitle=disc,
   year={2011},
   month = jul,
+}
+
+@inproceedings{gafni00disk,
+  title={Disk {Paxos}},
+  author={Gafni, Eli and Lamport, Leslie},
+  booktitle=disc,
+  year={2000},
+  month=oct,
 }
 
 @inproceedings{weatherspoon02erasure,
@@ -213,13 +221,24 @@
   year={1992},
 }
 
+@article{yao18scaling,
+  title={Scaling distributed transaction processing and recovery based on dependency logging},
+  author={Yao, Chang and Zhang, Meihui and Lin, Qian and Ooi, Beng Chin and Xu, Jiatao},
+  journal=vldbj,
+  volume={27},
+  number={3},
+  year={2018},
+  month=jun
+}
+
 @article{lamport01paxos,
   title={{Paxos made simple}},
   author={Lamport, Leslie},
   journal=sigact,
   volume={32},
   number={4},
-  year={2001}
+  year={2001},
+  month=dec,
 }
 
 @article{lamport10reconfiguring,
@@ -264,6 +283,16 @@
   month=apr
 }
 
+@article{gray89leases,
+  title={Leases: An efficient fault-tolerant mechanism for distributed file cache consistency},
+  author={Gray, Cary and Cheriton, David},
+  journal=osr,
+  volume={23},
+  number={5},
+  year={1989},
+  month=nov,
+}
+
 @article{hardy88confused,
   author = {Hardy, Norm},
   title = {The confused deputy: (or why capabilities might have been invented)},
@@ -302,7 +331,7 @@
 
 @article{dhawan17consistent,
   title={Consistent clustered applications with {Corfu}},
-  author={Dhawan, Medhavi and Johal, Gurprit and Stabile, Jim and Brajkovic, Vjekoslav and Chang, James and Goyal, Kapil and James, Kevin and Lokhandwala, Zeeshan and Manzanilla, Anny Martinez and Michoud, Roger and others},
+  author = {Dhawan, Medhavi and Johal, Gurprit and Stabile, Jim and Brajkovic, Vjekoslav and Chang, James and Goyal, Kapil and James, Kevin and Lokhandwala, Zeeshan and Manzanilla, Anny Martinez and Michoud, Roger and Munshed, Maithem and Neginhal, Srinivas and Spirov, Konstantin and Wei, Michael and Fritchie, Scott and Rossbach, Chris and Abraham, Ittai and Malkhi, Dahlia},
   journal=osr,
   volume={51},
   number={1},
@@ -491,8 +520,8 @@ howpublished={http://www.voltdb.com/}
 }
 
 @misc{retwis,
-title={{Retwis}},
-howpublished={http://retwis.antirez.com/}
+  title={{Retwis}},
+  howpublished={\url{http://retwis.antirez.com/}}
 }
 
 @misc{yangrpc,
@@ -505,8 +534,8 @@ howpublished={http://portal.nmc-probe.org/}
 }
 
 @misc{tpcc,
-title={{TPC-C Benchmark}},
-howpublished={http://www.tpc.org/tpcc/}
+  title={{TPC-C Benchmark}},
+  howpublished={\url{http://www.tpc.org/tpcc/}}
 }
 
 @misc{awsdynamo,
@@ -658,13 +687,23 @@ howpublished={http://www.tpc.org/tpcc/}
 }
 
 @misc{janusdb,
-  title={{The JanusDB project}},
-  howpublished = {\url{https://github.com/nyu-news/janusdb}}
+  title={{The Janus project}},
+  howpublished = {\url{https://github.com/nyu-news/janus}}
 }
 
 @misc{rocococode,
   title={{The Rococo project}},
   howpublished = {\url{https://github.com/shuaimu/rococo}}
+}
+
+@misc{roliscode,
+  title={{The Rolis project}},
+  howpublished = {\url{https://github.com/stonysystems/rolis}}
+}
+
+@misc{depfastcode,
+  title={{The DepFast project}},
+  howpublished = {\url{https://github.com/stonysystems/depfast-ae}}
 }
 
 @misc{cobracode,
@@ -692,7 +731,7 @@ howpublished={http://www.tpc.org/tpcc/}
 } 
 
 @inproceedings{miller16honey,
-  title={The honey badger of BFT protocols},
+  title={The honey badger of {BFT} protocols},
   author={Miller, Andrew and Xia, Yu and Croman, Kyle and Shi, Elaine and Song, Dawn},
   booktitle=ccs,
   year={2016},
@@ -941,8 +980,20 @@ howpublished={http://www.tpc.org/tpcc/}
 
 @misc{dpdk,
    title={Data Plane Development Kit ({DPDK})},
-   author={Linux Foundation},
-   url = {http://www.dpdk.org}
+   author={{Linux Foundation}},
+   howpublished = {\url{http://www.dpdk.org}}
+}
+
+@misc{rdma,
+   title={Linux {InfiniBand} Project},
+   author={{Linux Foundation}},
+   howpublished = {\url{http://infiniband.sourceforge.net/}}
+}
+
+@misc{tausanovitch16makes,
+  title={What Makes a {NIC} a {SmartNIC}, and Why is it Needed?},
+  author={Tausanovitch, Nick},
+  year={2016}
 }
 
 @misc{epoll,
@@ -962,8 +1013,14 @@ howpublished={http://www.tpc.org/tpcc/}
 
 @misc{grpc,
    title={{gRPC}},
-   url = {https://grpc.io/}
+   howpublished = {\url{https://grpc.io/}}
 }
+
+@misc{scala-akka,
+  title = "{Akka}",
+  howpublished = "\url{https://www.akka.io/}",
+}
+
 
 @misc{kqueue,
    title={kqueue(2) - {OpenBSD} manual pages},
@@ -1037,17 +1094,33 @@ howpublished={http://www.tpc.org/tpcc/}
 @inproceedings{howard16flexible,
   author = {Heidi Howard and Dahlia Malkhi and Alexander Spiegelman},
   title =	{Flexible {Paxos}: Quorum Intersection Revisited},
-  booktitle =	{International Conference on Principles of Distributed Systems (OPODIS)},
+  booktitle =	opodis,
   year = {2016},
+  month=dec,
+}
+
+@InProceedings{ittai21optimal,
+  author =	{Abraham, Ittai and Nayak, Kartik and Shrestha, Nibesh},
+  title =	{Optimal Good-Case Latency for Rotating Leader Synchronous {BFT}},
+  booktitle =	opodis,
+  year =	{2021},
   month=dec,
 }
 
 @inproceedings{rizvi17canopus,
   title={Canopus: A scalable and massively parallel consensus protocol},
   author={Rizvi, Sajjad and Wong, Bernard and Keshav, Srinivasan},
-  booktitle={International Conference on emerging Networking EXperiments and Technologies (CoNEXT)},
+  booktitle=conext,
   year={2017},
   month=dec,
+}
+
+@inproceedings{yan20domino,
+  title={Domino: using network measurements to reduce state machine replication latency in wans},
+  author={Yan, Xinan and Yang, Linguan and Wong, Bernard},
+  booktitle=conext,
+  year={2020},
+  month=nov
 }
 
 @article{zhang18lock,
@@ -1069,7 +1142,7 @@ howpublished={http://www.tpc.org/tpcc/}
 }
 
 @inproceedings{minh08stamp,
-  title={STAMP: Stanford transactional applications for multi-processing},
+  title={{STAMP}: Stanford transactional applications for multi-processing},
   author={Minh, Chi Cao and Chung, JaeWoong and Kozyrakis, Christos and Olukotun, Kunle},
   booktitle={International Symposium on Workload Characterization (IISWC)},
   year={2008},
@@ -1081,6 +1154,14 @@ howpublished={http://www.tpc.org/tpcc/}
   author={Fiala, David and Mueller, Frank and Engelmann, Christian and Riesen, Rolf and Ferreira, Kurt and Brightwell, Ron},
   booktitle=sc,
   year={2012},
+  month=nov,
+}
+
+@inproceedings{herault15practical,
+  title={Practical scalable consensus for pseudo-synchronous distributed systems},
+  author={Herault, Thomas and Bouteiller, Aurelien and Bosilca, George and Gamell, Marc and Teranishi, Keita and Parashar, Manish and Dongarra, Jack},
+  booktitle=sc,
+  year={2015},
   month=nov,
 }
 
@@ -1096,4 +1177,39 @@ howpublished={http://www.tpc.org/tpcc/}
   title = {Cure: Strong semantics meets high availability and low latency},
   booktitle = icdcs,
   year =  {2016},
+  month=jun,
+}
+
+@inproceedings{charapko19linearizable,
+  title={Linearizable quorum reads in Paxos},
+  author={Charapko, Aleksey and Ailijiang, Ailidani and Demirbas, Murat},
+  booktitle={USENIX Workshop on Hot Topics in Storage and File Systems (HotStorage 19)},
+  year={2019},
+  month=jul
+}
+
+@misc{google18why,
+  title={Why you should pick strong consistency, whenever possible},
+  author={{Google Cloud Blog}},
+  howpublished={\url{https://cloud.google.com/blog/products/databases/why-you-should-pick-strong-consistency-whenever-possible}}
+}
+@article{mills91internet,
+  title={Internet time synchronization: the network time protocol},
+  author={Mills, David L},
+  journal={IEEE Transactions on Communications},
+  volume={39},
+  number={10},
+  year={1991},
+  month=oct,
+}
+
+@misc{dslabscpp,
+  title={Distributed systems labs for {CSE-535}},
+  author={Shuai Mu},
+  howpublished={\url{https://github.com/stonysystems/dslabs-cpp}}
+}
+@misc{tianyincourse,
+  title={CS 598XU: Reliability of Cloud-Scale Systems},
+  author={Tianyin Xu},
+  howpublished={\url{https://cs598txu-uiuc.github.io/spring22/}}
 }
