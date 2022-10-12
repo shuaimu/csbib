@@ -23,6 +23,34 @@
   month = aug,
 }
 
+@inproceedings{10.1145/2619239.2626299,
+author = {Kalia, Anuj and Kaminsky, Michael and Andersen, David G.},
+title = {Using RDMA Efficiently for Key-Value Services},
+year = {2014},
+isbn = {9781450328364},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2619239.2626299},
+doi = {10.1145/2619239.2626299},
+abstract = {This paper describes the design and implementation of HERD, a key-value system designed to make the best use of an RDMA network. Unlike prior RDMA-based key-value systems, HERD focuses its design on reducing network round trips while using efficient RDMA primitives; the result is substantially lower latency, and throughput that saturates modern, commodity RDMA hardware.HERD has two unconventional decisions: First, it does not use RDMA reads, despite the allure of operations that bypass the remote CPU entirely. Second, it uses a mix of RDMA and messaging verbs, despite the conventional wisdom that the messaging primitives are slow. A HERD client writes its request into the server's memory; the server computes the reply. This design uses a single round trip for all requests and supports up to 26 million key-value operations per second with 5μs average latency. Notably, for small key-value items, our full system throughput is similar to native RDMA read throughput and is over 2X higher than recent RDMA-based key-value systems. We believe that HERD further serves as an effective template for the construction of RDMA-based datacenter services.},
+booktitle = {Proceedings of the 2014 ACM Conference on SIGCOMM},
+pages = {295–306},
+numpages = {12},
+keywords = {ROCE, RDMA, infiniband, key-value stores},
+location = {Chicago, Illinois, USA},
+series = {SIGCOMM '14}
+}
+
+@article{kalia14using,
+  title = {Using {RDMA} Efficiently for Key-Value Services},
+  author = {Kalia, Anuj and Kaminsky, Michael and Andersen, David G.},
+  booktitle=sigcomm,
+  year = {2014},
+  month = {aug},
+}
+
+
+
 @inproceedings{pu15low,
   title={Low latency geo-distributed data analytics},
   author={Pu, Qifan and Ananthanarayanan, Ganesh and Bodik, Peter and Kandula, Srikanth and Akella, Aditya and Bahl, Paramvir and Stoica, Ion},
@@ -37,4 +65,21 @@
   booktitle=sigcomm,
   year = {2019},
   month= aug,
+}
+
+@inproceedings{grant20smartnic,
+   title = {{SmartNIC} Performance Isolation with {FairNIC}: Programmable Networking for the Cloud},
+   author = {Stewart Grant and Anil Yelam and Maxwell Bland and Alex C Snoeren},
+   booktitle=sigcomm,
+   year = {2020},
+   month=aug,
+}
+
+
+@inproceedings{min21gimbal,
+   title={{Gimbal}: Enabling Multi-tenant Storage Disaggregation on {SmartNIC} {JBOFs}},
+   author = {Jaehong Min and Ming Liu and Tapan Chugh and Chenxingyu Zhao and Andrew Wei and In Hwan Doh and Arvind Krishnamurthy},
+   booktitle=sigcomm,
+   year = {2021},
+   month=aug,
 }
