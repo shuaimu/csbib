@@ -7,6 +7,14 @@
   institution={Xerox PARC Research Report}
 }
 
+@inproceedings{alsberg76principle,
+  title = {A principle for resilient sharing of distributed resources},
+  author = {Alsberg, Peter A and Day, John D},
+  booktitle = icse,
+  year = {1976},
+  month = oct,
+}
+
 @article{schneider83failstop,
   title={Fail-stop processors},
   author={Schneider, Fred B},
@@ -29,6 +37,13 @@
   year = 2001,
   month = jul,
 }
+@inproceedings{boyd12nonscalable,
+  title={Non-scalable locks are dangerous},
+  author={Boyd-Wickizer, Silas and Kaashoek, M. Frans and Morris, Robert and Zeldovich, Nickolai},
+  booktitle=ols,
+  year={2012},
+  month = jul,
+}
 
 @inproceedings{dabek02event,
   title={Event-driven programming for robust software},
@@ -38,13 +53,14 @@
   month = jul,
 }
 
-@inproceedings{boyd12nonscalable,
-  title={Non-scalable locks are dangerous},
-  author={Boyd-Wickizer, Silas and Kaashoek, M. Frans and Morris, Robert and Zeldovich, Nickolai},
-  booktitle=ols,
-  year={2012},
-  month = jul,
+@inproceedings{maymounkov02kademlia,
+  title={Kademlia: A peer-to-peer information system based on the xor metric},
+  author={Maymounkov, Petar and Mazieres, David},
+  booktitle={International Workshop on Peer-to-Peer Systems},
+  year={2002},
+  monht=mar
 }
+
 
 @article{ritchie84evolution,
   title={The evolution of the UNIX time-sharing system},
@@ -64,14 +80,39 @@
   month = aug,
 }
 
+@inproceedings{angel22efficient,
+ title = {Efficient Representation of Numerical Optimization Problems for {SNARKs} (extended version)},
+ author = {Sebastian Angel and Andrew J. Blumberg and Eleftherios Ioannidis and Jess Woods},
+ booktitle = security,
+ year = {2022},
+ month= aug
+}
+
+@inproceedings{goodchild17record,
+ title = {The Record Route Option is an Option!},
+ author = {Brian Goodchild and Yi-Ching Chiu and Haonan Lu and Rob Hansen and Matt Calder and Dave Choffnes and Wyatt Lloyd and Matthew Luckie and Ethan Katz-Bassett},
+ booktitle = imc,
+ year = {2017},
+ month = nov,
+}
+
+@article{lamport79sequential,
+  title = {How to make a multiprocessor computer that correctly executes multiprocess programs},
+  author = {Leslie Lamport},
+  journal = tc,
+  volume = {28},
+  number = {9},
+  year = {1979},
+  month=oct
+}
 
 @article{weihl88commutativity,
   title = {Commutativity-Based Concurrency Control for Abstract Data Types},
   author = {William E. Weihl},
   journal = tc,
-  volume = 37,
-  number = 12,
-  year = 1988,
+  volume = {37},
+  number = {12},
+  year = {1988},
   month = dec,
 }
 
@@ -89,22 +130,20 @@
   year={1997}
 }
 
-@inproceedings{golan11automatic,
-  title={Automatic fine-grain locking using shape properties},
-  author={Golan-Gueta, Guy and Bronson, Nathan and Aiken, Alex and Ramalingam, G and Sagiv, Mooly and Yahav, Eran},
-  booktitle=oopsla,
-  year={2011},
-  month = oct,
+@inproceedings{cohen09vcc,
+ author = {Cohen, Ernie
+           and Dahlweid, Markus
+           and Hillebrand, Mark
+           and Leinenbach, Dirk
+           and Moskal, Micha{\l}
+           and Santen, Thomas
+           and Schulte, Wolfram
+           and Tobies, Stephan},
+ booktitle = {Proceedings of International Conference on Theorem Proving in Higher Order Logics (TPHOLs)},
+ title = {{VCC}: A Practical System for Verifying Concurrent {C}},
+ year = {2009},
+ month= aug
 }
-
-@inproceedings{lesani22c4,
-  title={C4: verified transactional objects},
-  author={Lesani, Mohsen and Xia, Li-yao and Kaseorg, Anders and Bell, Christian J and Chlipala, Adam and Pierce, Benjamin C and Zdancewic, Steve},
-  booktitle=oopsla,
-  year={2022},
-  month=apr,
-}
-
 
 @inproceedings{herlihy08transactional,
   title={Transactional boosting: a methodology for highly-concurrent transactional objects},
@@ -138,13 +177,6 @@
   month=apr,
 }
 
-@inproceedings{mu14when,
-  title={{When Paxos meets erasure code: reduce network and storage cost in state machine replication}},
-  author={Mu, Shuai and Chen, Kang and Wu, Yongwei and Zheng, Weimin},
-  booktitle=hpdc,
-  year={2014},
-  month = jun,
-}
 
 @inproceedings{mu12mulibcloud,
   title={{$\mu$LibCloud: Providing high available and uniform accessing to multiple cloud storages}},
@@ -185,6 +217,13 @@
   booktitle=disc,
   year={2000},
   month=oct,
+}
+
+@article{nakamoto08bitcoin,
+  title={Bitcoin: A peer-to-peer electronic cash system},
+  author={Nakamoto, Satoshi},
+  journal={Decentralized business review},
+  year={2008}
 }
 
 @inproceedings{weatherspoon02erasure,
@@ -250,6 +289,14 @@
   year={2010},
 }
 
+@inproceedings{konwar21snow,
+ author = {Konwar, Kishori M and Lloyd, Wyatt and Lu, Haonan and Lynch, Nancy},
+ booktitle = ipdps,
+ title = {{SNOW} revisited: Understanding when ideal {READ} transactions are possible},
+ year = {2021},
+ month = may
+}
+
 @inproceedings{whitney97high,
   title={{High volume transaction processing without concurrency control, two phase commit, sql or c++}},
   author={Whitney, Arthur and Shasha, Dennis and Apter, Stevan},
@@ -264,6 +311,16 @@
   volume={100},
   number={5},
   year={1984},
+}
+
+@article{xu22cloudchain,
+  title={{CloudChain}: A Cloud Blockchain Using Shared Memory Consensus and {RDMA}}, 
+  author={Xu, Minghui and Liu, Shuo and Yu, Dongxiao and Cheng, Xiuzhen and Guo, Shaoyong and Yu, Jiguo},
+  journal=tc, 
+  year={2022},
+  volume={71},
+  number={12},
+  month=feb,
 }
 
 @inproceedings{li88multiprocessor,
@@ -303,6 +360,16 @@
   year = {1988},
 }
 
+@article{liskov91harp,
+ title = {Replication in the {Harp} file system},
+ author = {Liskov, Barbara and Ghemawat, Sanjay and Gruber, Robert and Johnson, Paul and Shrira, Liuba and Williams, Michael},
+  journal = osr,
+ number = {5},
+ volume = {25},
+ year = {1991},
+ month=oct,
+}
+
 @article{scales10design,
   title={The design of a practical system for fault-tolerant virtual machines},
   author={Scales, Daniel J and Nelson, Mike and Venkitachalam, Ganesh},
@@ -337,6 +404,16 @@
   number={1},
   year={2017},
   month=sep,
+}
+
+@article{setty20verifiable,
+ title = {Verifiable state machines: Proofs that untrusted services operate correctly},
+ author = {Srinath Setty and Sebastian Angel and Jonathan Lee},
+ journal = osr,
+ volume = {54},
+ number = {1},
+ year = {2020},
+ month=jul,
 }
 
 @book{weikum01transactional,
@@ -497,11 +574,19 @@
 } 
 
 @book{gerhard01transactional,
-  title="Transactional Information Systems: Theory, Algorithms, and the Practice of Concurrency Control and Recovery",
-  author="Gerhard Weikum and Gottfried Vossen",
+  title={Transactional Information Systems: Theory, Algorithms, and the Practice of Concurrency Control and Recovery},
+  author={Gerhard Weikum and Gottfried Vossen},
   publisher = {Morgan Kaufmann},
-  year=2001,
+  year={2001},
 }
+
+@book{lamport02specifying,
+ title = {Specifying Systems: The {TLA+} Language and Tools for Hardware and Software Engineers},
+ author = {Lamport, Leslie},
+ publisher = {Addison-Wesley Longman Publishing Co., Inc.},
+ year = {2002}
+}
+
 
 @misc{rubis,
 title={{RUBiS}},
@@ -711,6 +796,26 @@ howpublished={http://portal.nmc-probe.org/}
   howpublished = {\url{https://github.com/dbcobra/cobrahome}}
 }
 
+@article{zave12using,
+ title = {Using Lightweight Modeling to Understand {Chord}},
+ author = {Zave, Pamela},
+ journal = ccr,
+ volume = {42},
+ number = {2},
+ year = {2012},
+ month = mar,
+}
+
+@article{han13expressive,
+  title = {Expressive Privacy Control with Pseudonyms},
+  author = {Han, Seungyeop and Liu, Vincent and Pu, Qifan and Peter, Simon and Anderson, Thomas and Krishnamurthy, Arvind and Wetherall, David},
+  journal = ccr,
+  volume = {43},
+  number = {4},
+  year = {2013},
+  month = aug,
+}
+
 @article{dang16paxos,
   title={Paxos made switch-y},
   author={Dang, Huynh Tu and Canini, Marco and Pedone, Fernando and Soul{\'e}, Robert},
@@ -720,6 +825,8 @@ howpublished={http://portal.nmc-probe.org/}
   year={2016},
   month=apr,
 }
+
+
 
 @inproceedings{bowers09hail,
   ids={hail:ccs09},
@@ -791,11 +898,20 @@ howpublished={http://portal.nmc-probe.org/}
   year={2018},
 }
 
+@inproceedings{hong13kuafu,
+  title = {{KuaFu}: Closing the parallelism gap in database replication},
+  author = {Hong, Chuntao and Zhou, Dong and Yang, Mao and Kuo, Carbo and Zhang, Lintao and Zhou, Lidong},
+  booktitle = icde,
+  year = {2013},
+  month=apr,
+}
+
 @inproceedings{gupta21rcc,
   title={Rcc: Resilient concurrent consensus for high-throughput secure transaction processing},
   author={Gupta, Suyash and Hellings, Jelle and Sadoghi, Mohammad},
   booktitle=icde,
-  year={2021}
+  year={2021},
+  month=apr,
 }
 
 @book{lynch96distributed,
@@ -883,14 +999,29 @@ howpublished={http://portal.nmc-probe.org/}
   booktitle = {Proceedings of the 1st ACM SIGCOMM Symposium on Software Defined Networking Research}
 }
 
-@inproceedings{poke15dare,
-    author = {Poke, Marius and Hoefler, Torsten},
-    title = {{DARE}: High-Performance State Machine Replication on {RDMA} Networks},
-    year = {2015},
-    booktitle = hpdc,
-    month=jun,
+@inproceedings{mu14when,
+  title={{When {Paxos} meets erasure code: reduce network and storage cost in state machine replication}},
+  author={Mu, Shuai and Chen, Kang and Wu, Yongwei and Zheng, Weimin},
+  booktitle=hpdc,
+  year={2014},
+  month = jun,
 }
 
+@inproceedings{poke15dare,
+  author = {Poke, Marius and Hoefler, Torsten},
+  title = {{DARE}: High-Performance State Machine Replication on {RDMA} Networks},
+  year = {2015},
+  booktitle = hpdc,
+  month=jun,
+}
+
+@inproceedings{li18transparent,
+ title = {Transparent speculation in geo-replicated transactional data stores},
+ author = {Li, Zhongmiao and Van Roy, Peter and Romano, Paolo},
+ booktitle = hpdc,
+ year = {2018},
+ month=jun,
+}
 
 @inproceedings{poke17allconcur,
     author = {Poke, Marius and Hoefler, Torsten and Glass, Colin W.},
@@ -1092,11 +1223,27 @@ howpublished={http://portal.nmc-probe.org/}
   month=dec,
 }
 
+@inproceedings{radhakrishnan11tcp,
+  title = {{TCP} fast open},
+  author = {Radhakrishnan, Sivasankar and Cheng, Yuchung and Chu, Jerry and Jain, Arvind and Raghavan, Barath},
+  booktitle = conext,
+  year = {2011},
+  month=dec,
+}
+
 @inproceedings{rizvi17canopus,
   title={Canopus: A scalable and massively parallel consensus protocol},
   author={Rizvi, Sajjad and Wong, Bernard and Keshav, Srinivasan},
   booktitle=conext,
   year={2017},
+  month=dec,
+}
+
+@inproceedings{barbette19rss,
+  title = {{RSS++}: Load and State-Aware Receive Side Scaling},
+  author = {Barbette, Tom and Katsikas, Georgios P. and Maguire, Gerald Q. and Kosti\'{c}, Dejan},
+  booktitle=conext,
+  year={2019},
   month=dec,
 }
 
@@ -1226,4 +1373,78 @@ howpublished={http://portal.nmc-probe.org/}
   author={Benet, Juan},
   journal={arXiv preprint arXiv:1407.3561},
   year={2014}
+}
+
+@inproceedings{istvan20lets,
+author = {Istv\'{a}n, Zsolt},
+title = {Let's Add Transactions to {FPGA}-Based Key-Value Stores!},
+year = {2020},
+booktitle = {Proceedings of the 16th International Workshop on Data Management on New Hardware},
+month = jun,
+}
+
+@inproceedings{istvan13flexible,
+  title={A flexible hash table design for 10{Gbps} key-value stores on {FPGAs}},
+  author={Istv{\'a}n, Zsolt and Alonso, Gustavo and Blott, Michaela and Vissers, Kees},
+  booktitle=fpl,
+  year={2013},
+  month=sep,
+}
+
+@inproceedings{sit21experimental,
+  title={An experimental framework for improving the performance of {BFT} consensus for future permissioned blockchains},
+  author={Sit, Man-Kit and Bravo, Manuel and Istv{\'a}n, Zsolt},
+  booktitle={Proceedings of the 15th ACM International Conference on Distributed and Event-based Systems (DEBS)},
+  year={2021},
+  month=jun,
+}
+
+@inproceedings{kim19bionicdb,
+  title={{BionicDB}: Fast and Power-Efficient {OLTP} on {FPGA}},
+  author={Kim, Kangnyeon and Johnson, Ryan and Pandis, Ippokratis},
+  booktitle=edbt,
+  year={2019},
+  month=mar,
+}
+
+@inproceedings{xie20achieving,
+  title={Achieving Flexible, Low-Latency and 100{Gbps} Line-rate Load Balancing over Ethernet on {FPGA}},
+  author={Xie, Jinyu and Yin, Wenbo and Wang, Lingli},
+  booktitle={2020 IEEE 33rd International System-on-Chip Conference (SOCC)},
+  year={2020},
+  month=sep,
+}
+
+@inproceedings{dai17foregraph,
+  author = {Dai, Guohao and Huang, Tianhao and Chi, Yuze and Xu, Ningyi and Wang, Yu and Yang, Huazhong},
+  title = {{ForeGraph}: Exploring Large-Scale Graph Processing on Multi-{FPGA} Architecture},
+  booktitle = {Proceedings of the 2017 ACM/SIGDA International Symposium on Field-Programmable Gate Arrays (FPGA)},
+  year = {2017},
+  month=feb,
+}
+
+@inproceedings{rusch18towards,
+  author={Rüsch, Signe and Messadi, Ines and Kapitza, Rüdiger},
+  booktitle={2018 48th Annual IEEE/IFIP International Conference on Dependable Systems and Networks Workshops (DSN-W)}, 
+  title={Towards Low-Latency {Byzantine} Agreement Protocols Using {RDMA}}, 
+  year={2018},
+  month=jun,
+}
+
+@inproceedings{sakic19p4bft,
+  title={{P4BFT}: Hardware-accelerated {Byzantine}-resilient network control plane},
+  author={Sakic, Ermin and Deric, Nemanja and Goshi, Endri and Kellerer, Wolfgang},
+  booktitle={2019 IEEE Global Communications Conference (GLOBECOM)},
+  year={2019},
+  month=dec,
+}
+
+@ARTICLE{han20switch,
+  author={Han, Sol and Jang, Seokwon and Lee, Hochan and Pack, Sangheon},
+  journal={IEEE Communications Letters}, 
+  title={Switch-Centric {Byzantine} Fault Tolerance Mechanism in Distributed Software Defined Networks}, 
+  year={2020},
+  volume={24},
+  number={10},
+  month=oct,
 }

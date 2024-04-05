@@ -4,12 +4,20 @@
   author={Castro, Miguel and Liskov, Barbara},
   booktitle=osdi,
   year={1999},
-  month = feb,
+  month =feb,
 }
 
 @inproceedings{waldspurger02memory,
   title={Memory resource management in {VMware} {ESX} server},
   author={Waldspurger, Carl A.},
+  booktitle=osdi,
+  year={2002},
+  month = dec,
+}
+
+@inproceedings{white02integrated,
+  title = {An Integrated Experimental Environment for Distributed Systems and Networks},
+  author = {Brian White and Jay Lepreau and Leigh Stoller and Robert Ricci and Shashi Guruprasad and Mac Newbold and Mike Hibler and Chad Barb and Abhijeet Joglekar},
   booktitle=osdi,
   year={2002},
   month = dec,
@@ -38,10 +46,18 @@
 
 @inproceedings{barham04using,
   author = {Paul Barham and Austin Donnelly and Rebecca Isaacs and Richard Mortier},
-  title = "{Using Magpie for request extraction and workload modelling}",
+  title = {Using Magpie for request extraction and workload modelling},
   year = {2004},
   booktitle = osdi,
   month = DEC,
+}
+
+@inproceedings{maccormick04boxwood,
+  title = {Boxwood: Abstractions as the Foundation for Storage Infrastructure},
+  author = {MacCormick, John and Murphy, Nick and Najork, Marc and Thekkath, Chandramohan A and Zhou, Lidong},
+  year = {2004},
+  booktitle = osdi,
+  month = dec,
 }
 
 @inproceedings{cowling06hq,
@@ -62,8 +78,8 @@
 
 @inproceedings{chang06bigtable,
   ids = {bigtable:osdi06},
-  author = "Fay Chang and Jeffrey Dean and Sanjay Ghemawat and Wilson C. Hsieh and Deborah A. Wallach and Mike Burrows and Tushar Chandra and Andrew Fikes and Robert E. Gruber",
-  title = "Bigtable: A Distributed Storage System for Structured Data",
+  author = {Fay Chang and Jeffrey Dean and Sanjay Ghemawat and Wilson C. Hsieh and Deborah A. Wallach and Mike Burrows and Tushar Chandra and Andrew Fikes and Robert E. Gruber},
+  title = {Bigtable: A Distributed Storage System for Structured Data},
   booktitle = osdi,
   year = 2006,
   month = nov,
@@ -104,6 +120,14 @@
   month = dec,
 }
 
+@inproceedings{gunda10nectar,
+  author = {Gunda, Pradeep Kumar and Ravindranath, Lenin and Thekkath, Chandramohan A and Yu, Yuan and Zhuang, Li},
+  booktitle = osdi,
+  title = {Nectar: Automatic Management of Data and Computation in Datacenters},
+  year = {2010},
+  month=dec,
+}
+
 @inproceedings{peng10large,
   ids={percolator:osdi10},
   title={{Large-scale incremental processing using distributed transactions and notifications}},
@@ -129,8 +153,16 @@
   month = oct,
 }
 
+@inproceedings{ports10txcache,
+  title = {Transactional Consistency and Automatic Management in an Application Data Cache},
+  author = {Ports, Dan RK and Clements, Austin T and Zhang, Irene and Madden, Samuel and Liskov, Barbara},
+  booktitle=osdi,
+  year={2010},
+  month=oct,
+}
+
 @inproceedings{soares10flexsc,
-  title={FlexSC: Flexible system call scheduling with exception-less system calls},
+  title={{FlexSC}: Flexible system call scheduling with exception-less system calls},
   author={Soares, Livio and Stumm, Michael},
   booktitle=osdi,
   year={2010},
@@ -138,7 +170,7 @@
 }
 
 @inproceedings{nightingale12flat,
-  title = {Flat datacenter storage.},
+  title = {Flat datacenter storage},
   author = {Nightingale, Edmund B and Elson, Jeremy and Fan, Jinliang and Hofmann, Owen S and Howell, Jon and Suzue, Yutaka},
   booktitle = osdi,
   year = {2012},
@@ -190,7 +222,7 @@
   author = {Wenting Zheng and Stephen Tu and Eddie Kohler and Barbara Liskov},
   title = {Fast Databases with Fault Durability and Recovery Through Multicore Parallelism},
   booktitle = osdi,
-  year = 2014,
+  year = {2014},
   month = oct,
 }
 
@@ -222,8 +254,8 @@
 
 @inproceedings{muralidhar14f4,
   ids={f4:osdi14},
-  title={{f4: Facebook's warm BLOB storage system}},
-  author={Muralidhar, Subramanian and Lloyd, Wyatt and Roy, Sabyasachi and Hill, Cory and Lin, Ernest and Liu, Weiwen and Pan, Satadru and Shankar, Shiva and Sivakumar, Viswanath and Tang, Linpeng and others},
+  title={{f4: {Facebook's} warm {BLOB} storage system}},
+  author = {Muralidhar, Subramanian and Lloyd, Wyatt and Roy, Sabyasachi and Hill, Cory and Lin, Ernest and Liu, Weiwen and Pan, Satadru and Shankar, Shiva and Sivakumar, Viswanath and Tang, Linpeng and Kumar, Sanjeev},
   booktitle=osdi,
   year={2014},
   month = oct,
@@ -237,11 +269,28 @@
   month = oct,
 }
 
+@inproceedings{angel14end,
+  author = {Sebastian Angel and Hitesh Ballani and Thomas Karagiannis and Greg O'Shea and Eno Thereska},
+  title = {End-to-end Performance Isolation through Virtual Datacenters},
+  booktitle=osdi,
+  year = {2014},
+  month= oct,
+}
+
+
 @inproceedings{zheng14torturing,
   title={Torturing databases for fun and profit},
   author={Zheng, Mai and Tucek, Joseph and Huang, Dachuan and Qin, Feng and Lillibridge, Mark and Yang, Elizabeth S and Zhao, Bill W and Singh, Shashank},
   booktitle=osdi,
   year={2014},
+  month = oct,
+}
+
+@inproceedings{arnautov16scone,
+  title = {Scone: Secure {Linux} containers with {Intel} {SGX}},
+  author = {Sergei Arnautov and Bohdan Trach and Franz Gregor and Thomas Knauth and Andre Martin and Christian Priebe and Joshua Lind and Divya Muthukumaran and Dan O{\textquoteright}Keeffe and Mark L. Stillwell and David Goltzsche and Dave Eyers and R{\"u}diger Kapitza and Peter Pietzuch and Christof Fetzer},
+  booktitle = osdi,
+  year = {2016},
   month = oct,
 }
 
@@ -273,6 +322,22 @@
 @inproceedings{gu16certikos,
   title={CertiKOS: an extensible architecture for building certified concurrent OS kernels},
   author={Gu, Ronghui and Shao, Zhong and Chen, Hao and Wu, Xiongnan Newman and Kim, Jieung and Sj{\"o}berg, Vilhelm and Costanzo, David},
+  booktitle=osdi,
+  year={2016},
+  month = oct,
+}
+
+@inproceedings{liu16xft,
+  title={{XFT}: Practical fault tolerance beyond crashes},
+  author={Liu, Shengyun and Viotti, Paolo and Cachin, Christian and Qu{\'e}ma, Vivien and Vukoli{\'c}, Marko},
+  booktitle=osdi,
+  year={2016},
+  month=oct,
+}
+
+@inproceedings{guerraoui16incremental,
+  title = {Incremental consistency guarantees for replicated objects},
+  author = {Guerraoui, Rachid and Pavlovic, Matej and Seredinschi, Dragos-Adrian},
   booktitle=osdi,
   year={2016},
   month = oct,
@@ -312,6 +377,14 @@
   month=oct,
 }
 
+@inproceedings{setty18proving,
+  author = {Srinath Setty and Sebastian Angel and Trinabh Gupta and Jonathan Lee},
+  title = {Proving the correct execution of concurrent services in zero-knowledge},
+  booktitle=osdi,
+  year={2018},
+  month=oct,
+}
+
 @inproceedings{alagappan18fault,
   title={{Fault-Tolerance}, Fast and Slow: Exploiting Failure Asynchrony in Distributed Systems},
   author={Alagappan, Ramnatthan and Ganesan, Aishwarya and Liu, Jing and Arpaci-Dusseau, Andrea and Arpaci-Dusseau, Remzi},
@@ -328,12 +401,28 @@
   month=oct
 }
 
+@inproceedings{sigurbjarnarson18nickel,
+ title = {Nickel: A framework for design and verification of information flow control systems},
+ author = {Sigurbjarnarson, Helgi and Nelson, Luke and Castro-Karney, Bruno and Bornholt, James and Torlak, Emina and Wang, Xi},
+  booktitle=osdi,
+  year={2018},
+  month=oct
+}
+
 @inproceedings{huang18capturing,
   title={Capturing and enhancing in situ system observability for failure detection},
   author={Huang, Peng and Guo, Chuanxiong and Lorch, Jacob R and Zhou, Lidong and Dang, Yingnong},
   booktitle=osdi,
   year={2018},
   month=oct
+}
+
+@inproceedings{wei18deconstructing,
+ title = {Deconstructing rdma-enabled distributed transactions: Hybrid is better!},
+ author = {Wei, Xingda and Dong, Zhiyuan and Chen, Rong and Chen, Haibo},
+ booktitle=osdi,
+ year = {2018},
+ month=oct,
 }
 
 @inproceedings{tan20cobra,
@@ -348,8 +437,16 @@
   author = {Khiem Ngo and Siddhartha Sen and Wyatt Lloyd},
   title = {Tolerating Slowdowns in Replicated State Machines using {Copilots}},
   booktitle = osdi,
-  month =  nov,
-  year =  2020,
+  year = {2020},
+  month = nov,
+}
+
+@inproceedings{yaseen20aragog,
+  title = {Aragog: Scalable Runtime Verification of Shardable Networked Systems},
+  author = {Nofel Yaseen and Behnaz Arzani and Ryan Beckett and Selim Ciraci and Vincent Liu},
+  booktitle = osdi,
+  year = {2020},
+  month = nov,
 }
 
 @inproceedings {brunella20hxdp,
@@ -406,4 +503,45 @@
   booktitle=osdi,
   year={2020},
   month=nov,
+}
+
+@inproceedings{lu20performance,
+  title = {Performance-Optimal Read-Only Transactions},
+  author = {Haonan Lu and Siddhartha Sen and Wyatt Lloyd},
+  booktitle=osdi,
+  year = {2020},
+  month = nov,
+}
+
+@inproceedings{shi20flighttracker,
+  ids={flighttracker:osdi20},
+  title = {{FlightTracker}: Consistency across Read-Optimized Online Stores at {Facebook}},
+  author = {Xiao Shi and Scott Pruett and Kevin Doherty and Jinyu Han and Dmitri Petrov and Jim Carrig and John Hugg and Nathan Bronson},
+  booktitle=osdi,
+  year = {2020},
+  month=nov
+}
+
+@inproceedings{yao21distai,
+  title = {{DistAI}: {Data-Driven} Automated Invariant Learning for Distributed Protocols},
+  author = {Jianan Yao and Runzhou Tao and Ronghui Gu and Jason Nieh and Suman Jana and Gabriel Ryan},
+  booktitle=osdi,
+  year = {2021},
+  month = jul,
+}
+
+@inproceedings{lu23ncc,
+ title = {{NCC}: Natural Concurrency Control for Strictly Serializable Datastores by Avoiding the Timestamp-Inversion Pitfall},
+ author = {Haonan Lu and Shuai Mu and Wyatt Lloyd and Siddhartha Sen},
+ booktitle = osdi,
+ month = jul,
+ year = {2023}
+}
+
+@inproceedings{eldeeb23chardonnay,
+ author = {Eldeeb, Tamer and Xie, Xincheng and Bernstein, Philip A and Cidon, Asaf and Yang, Junfeng},
+ title = {Chardonnay: Fast and General Datacenter Transactions for On-Disk Databases},
+ booktitle = osdi,
+ year = {2023},
+ month=jul,
 }

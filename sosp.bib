@@ -32,18 +32,18 @@
   month = dec,
 }
 
-@inproceedings{cheriton93understanding,
-  ids={catocs:sosp93},
-  title={Understanding the limitations of causally and totally ordered communication},
-  author ={Cheriton, David R and Skeen, Dale},
+@inproceedings{wahbe93efficient,
+  title = {Efficient software-based fault isolation},
+  author = {Wahbe, Robert and Lucco, Steven and Anderson, Thomas E and Graham, Susan L},
   booktitle = sosp,
   year = {1993},
   month = dec,
 }
 
-@inproceedings{wahbe93efficient,
-  title = {Efficient software-based fault isolation},
-  author = {Wahbe, Robert and Lucco, Steven and Anderson, Thomas E and Graham, Susan L},
+@inproceedings{cheriton93understanding,
+  ids={catocs:sosp93},
+  title={Understanding the limitations of causally and totally ordered communication},
+  author ={Cheriton, David R and Skeen, Dale},
   booktitle = sosp,
   year = {1993},
   month = dec,
@@ -62,8 +62,8 @@
            storage system},
   author = {Douglas B. Terry and Marvin M. Theimer and Karin Petersen and Alan
             J. Demers and Mike J. Spreitzer and Carl H. Hauser},
-  booktitle = SOSP,
-  year = 1995,
+  booktitle = sosp,
+  year = {1995},
   month = dec,
 }
 
@@ -76,11 +76,27 @@
   month=oct,
 }
 
+@inproceedings{petersen97flexible,
+  title = {Flexible update propagation for weakly consistent replication},
+  author = {Petersen, Karin and Spreitzer, Mike J and Terry, Douglas B and Theimer, Marvin M and Demers, Alan J},
+  booktitle = sosp,
+  year = {1997},
+  month=oct,
+}
+
 @inproceedings{welsh01seda,
-  title={SEDA: An architecture for well-conditioned, scalable internet services},
+  title={{SEDA}: An architecture for well-conditioned, scalable internet services},
   author={Welsh, Matt and Culler, David and Brewer, Eric},
   booktitle=sosp,
   year={2001},
+  month=oct,
+}
+
+@inproceedings{andersen01resilient,
+  title = {Resilient overlay networks},
+  author = {Andersen, David and Balakrishnan, Hari and Kaashoek, Frans and Morris, Robert},
+  booktitle = sosp,
+  year = {2001},
   month=oct,
 }
 
@@ -176,6 +192,13 @@
   month = oct,
 }
 
+@inproceedings{klein09sel4,
+  title = {{seL4}: Formal verification of an {OS} kernel},
+  author = {Klein, Gerwin and Elphinstone, Kevin and Heiser, Gernot and Andronick, June and Cock, David and Derrin, Philip and Elkaduwe, Dhammika and Engelhardt, Kai and Kolanski, Rafal and Norrish, Michael and Sewell, Thomas and Tuch, Harvey and Winwood, Simon},
+  booktitle = sosp,
+  year = {2009},
+  month = oct,
+}
 
 @inproceedings{calder11windows,
   ids={azure:sosp11},
@@ -237,6 +260,23 @@
   month = nov,
 } 
 
+@inproceedings{terry13consistency,
+  author = {Terry, Douglas B and Prabhakaran, Vijayan and Kotla, Ramakrishna and Balakrishnan, Mahesh and Aguilera, Marcos K and Abu-Libdeh, Hussam},
+  title = {Consistency-based service level agreements for cloud storage},
+  booktitle = sosp,
+  year = {2013},
+  month = nov,
+}
+
+@inproceedings{huang13analysis,
+  author = {Huang, Qi and Birman, Ken and van Renesse, Robbert and Lloyd,
+Wyatt and Kumar, Sanjeev and Li, Harry C.},
+  title = {An Analysis of {Facebook} Photo Caching},
+  booktitle = sosp,
+  year = {2013},
+  month = nov,
+}
+
 @inproceedings{balakrishnan13tango,
   title={Tango: Distributed data structures over a shared log},
   author={Balakrishnan, Mahesh and Malkhi, Dahlia and Wobber, Ted and Wu, Ming and Prabhakaran, Vijayan and Wei, Michael and Davis, John D and Rao, Sriram and Zou, Tao and Zuck, Aviad},
@@ -263,7 +303,7 @@
 }
 
 @inproceedings{moraru13there,
-  ids={epaxos:sosp13},
+  ids={epaxos:sosp13, epaxos},
   title={There is more consensus in egalitarian parliaments},
   author={Moraru, Iulian and Andersen, David G and Kaminsky, Michael},
   booktitle=sosp,
@@ -326,7 +366,7 @@
   title="Building consistent transactions with inconsistent replication",
   author="Irene Zhang and Naveen Kr. Sharma and Adriana Szekeres and Arvind Krishnamurthy	and Dan R. K. Ports",
   booktitle=sosp,
-  year=2015,
+  year={2015},
   month = oct,
 }
 
@@ -403,11 +443,28 @@
   month=oct,
 }
 
+@inproceedings{levy17tock,
+ title = {Multiprogramming a 64 {KB} Computer Safely and Efficiently},
+ author = {Amit Levy and Bradford Campbell and Branden Ghena
+and Daniel B. Giffin and Pat Pannuto and Prabal Dutta and Philip Levis},
+ booktitle = sosp,
+ year = {2017},
+ month=oct,
+}
+
 @inproceedings{li17eris,
   author="Jialin Li and Ellis Michael and Dan RK Ports",
   title="Eris: Coordination-free consistent transactions using in-network concurrency control",
   booktitle= sosp,
-  year= "2017",
+  year= {2017},
+  month=oct,
+}
+
+@inproceedings{huang17sve,
+  title = {{SVE}: Distributed Video Processing at {Facebook} Scale},
+  author = {Qi Huang and Petchean Ang and Peter Knowles and Tomasz Nykiel and Iaroslav Tverdokhlib and Amit Yajurvedi and Paul Dapolito VI and Xifan Yan and Maxim Bykov and Chuen Liang and Mohit Talwar and Abhishek Mathur and Sachin Kulkarni and Matthew Burke and Wyatt Lloyd},
+  booktitle= sosp,
+  year= {2017},
   month=oct,
 }
 
@@ -436,7 +493,7 @@
 }
 
 @inproceedings{li17kvdirect,
-  title={{KV-Direct}: High-performance in-memory key-value store with programmable nic},
+  title={{KV-Direct}: High-performance in-memory key-value store with programmable {NIC}},
   author={Li, Bojie and Ruan, Zhenyuan and Xiao, Wencong and Lu, Yuanwei and Xiong, Yongqiang and Putnam, Andrew and Chen, Enhong and Zhang, Lintao},
   booktitle=sosp,
   year={2017},
@@ -470,6 +527,14 @@
 @inproceedings{balakrishnan21log,
   title={Log-structured Protocols in {Delos}},
   author = {Balakrishnan, Mahesh and Shen, Chen and Jafri, Ahmed and Mapara, Suyog and Geraghty, David and Flinn, Jason and Venkat, Vidhya and Nedelchev, Ivailo and Ghosh, Santosh and Dharamshi, Mihir and Liu, Jingming and Gruszczynski, Filip and Li, Jun and Tibrewal, Rounak and Zaveri, Ali and Nagar, Rajeev and Yossef, Ahmed and Richard, Francois and Song, Yee Jiun},
+  booktitle=sosp,
+  year={2021},
+  month=oct
+}
+
+@inproceedings{helt21regular,
+  title = {{Regular Sequential Serializability and Regular Sequential Consistency}},
+  author = {Jeffrey Helt and Matthew Burke and Amit Levy and Wyatt Lloyd},
   booktitle=sosp,
   year={2021},
   month=oct

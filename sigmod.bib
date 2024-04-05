@@ -15,6 +15,14 @@
   month = may,
 } 
 
+@inproceedings{haerder87concepts,
+  author = {Haerder, Theo and Rothermel, Kurt},
+  title = {Concepts for transaction recovery in nested transactions},
+  booktitle=sigmod,
+  year = {1987},
+  month = may,
+}
+
 @inproceedings{patterson88case,
   ids={raid:sigmod88},
   title={A case for redundant arrays of inexpensive disks (RAID)},
@@ -32,6 +40,15 @@
   year={1992},
   month = jun,
 }
+
+@inproceedings{oneil1993lru,
+ title = {The {LRU-K} page replacement algorithm for database disk buffering},
+ author = {O'Neil, Elizabeth J and O'Neil, Patrick E and Weikum, Gerhard},
+ booktitle=sigmod,
+ year = {1993},
+ month=may
+}
+
 @inproceedings{berenson95critique,
   ids={isolationlevel:sigmod95},
   author = {Berenson, Hal and Bernstein, Phil and Gray, Jim and Melton, Jim and O'Neil, Elizabeth and O'Neil, Patrick},
@@ -52,7 +69,7 @@
 
 @inproceedings{harizopoulos08oltp,
   ids={shore:sigmod08},
-  title={{OLTP through the looking glass, and what we found there}},
+  title={{OLTP} through the looking glass, and what we found there},
   author={Harizopoulos, Stavros and Abadi, Daniel J and Madden, Samuel and Stonebraker, Michael},
   booktitle=sigmod,
   year={2008},
@@ -88,9 +105,17 @@
 @inproceedings{horikawa13latch,
   title = {Latch-free data structures for {DBMS}: design, implementation, and evaluation},
   author = {Takashi Horikawa},
-  booktitle = SIGMOD, 
+  booktitle=sigmod,
   year = {2013},
   month = jun,
+}
+
+@inproceedings{diaconu2013hekaton,
+  author = {Diaconu, Cristian and Freedman, Craig and Ismert, Erik and Larson, Per-Ake and Mittal, Pravin and Stonecipher, Ryan and Verma, Nitin and Zwilling, Mike},
+  title = {Hekaton: SQL server's memory-optimized {OLTP} engine},
+  booktitle=sigmod,
+  year = {2013},
+  month=jun,
 }
 
 @inproceedings{armstrong13linkbench,
@@ -105,7 +130,7 @@
   title={Bolt-on causal consistency},
   author={Bailis, Peter and Ghodsi, Ali and Hellerstein, Joseph M and Stoica, Ion},
   booktitle=sigmod,
-  year = 2013,
+  year = {2013},
   month = jun,
 }
 
@@ -333,9 +358,33 @@
   month=jun,
 }
 
+@inproceedings{verbitski18amazon,
+ author = {Verbitski, Alexandre and Gupta, Anurag and Saha, Debanjan and Corey, James and Gupta, Kamal and Brahmadesam, Murali and Mittal, Raman and Krishnamurthy, Sailesh and Maurice, Sandor and Kharatishvilli, Tengiz and Bao, Xiaofeng},
+ title = {Amazon {Aurora}: On Avoiding Distributed Consensus for {I/Os}, Commits, and Membership Changes},
+ booktitle=sigmod,
+ year = {2018},
+ month=jul,
+}
+
 @inproceedings{shamis19fast,
   title={Fast general distributed transactions with opacity},
   author={Shamis, Alex and Renzelmann, Matthew and Novakovic, Stanko and Chatzopoulos, Georgios and Dragojevi{\'c}, Aleksandar and Narayanan, Dushyanth and Castro, Miguel},
+  booktitle=sigmod,
+  year={2019},
+  month=jul,
+}
+
+@inproceedings{tyulenev19implementation,
+  title = {Implementation of Cluster-Wide Logical Clock and Causal Consistency in MongoDB},
+  author = {Tyulenev, Misha and Schwerin, Andy and Kamsky, Asya and Tan, Randolph and Cabral, Alyson and Mulrow, Jack},
+  booktitle=sigmod,
+  year={2019},
+  month=jul,
+}
+
+@inproceedings{zhang19optimizing,
+  title = {Optimizing Declarative Graph Queries at Large Scale},
+  author = {Zhang, Qizhen and Acharya, Akash and Chen, Hongzhi and Arora, Simran and Chen, Ang and Liu, Vincent and Loo, Boon Thau},
   booktitle=sigmod,
   year={2019},
   month=jul,
@@ -347,6 +396,22 @@
   booktitle=sigmod,
   year={2020},
   month=jun,
+}
+
+@inproceedings{sarkar20lethe,
+ author = {Sarkar, Subhadeep and Papon, Tarikul Islam and Staratzis, Dimitris and Athanassoulis, Manos},
+ booktitle = sigmod,
+ month = may,
+ title = {Lethe: A tunable delete-aware {LSM} engine},
+ year = {2020}
+}
+
+@inproceedings{buragohain2020a1,
+  author = {Buragohain, Chiranjeeb and Risvik, Knut Magne and Brett, Paul and Castro, Miguel and Cho, Wonhee and Cowhig, Joshua and Gloy, Nikolas and Kalyanaraman, Karthik and Khanna, Richendra and Pao, John and Renzelmann, Matthew and Shamis, Alex and Tan, Timothy and Zheng, Shuheng},
+  title = {A1: A distributed in-memory graph database},
+  booktitle = sigmod,
+  year = {2020},
+  month = jun,
 }
 
 @inproceedings{zamanian20chiller,
@@ -389,10 +454,26 @@
   month=jun,
 }
 
+@inproceedings{zhou21foundationdb,
+  author = {Zhou, Jingyu and Xu, Meng and Shraer, Alexander and Namasivayam, Bala and Miller, Alex and Tschannen, Evan and Atherton, Steve and Beamon, Andrew J and Sears, Rusty and Leach, John and others},
+  title = {{FoundationDB}: A distributed unbundled transactional key value store},
+  booktitle=sigmod,
+  year={2021},
+  month=jun,
+}
+
 @inproceedings{tang22ad,
   title={Ad Hoc Transactions in Web Applications: The Good, the Bad, and the Ugly},
   author={Tang, Chuzhe and Wang, Zhaoguo and Zhang, Xiaodong and Yu, Qianmian and Zang, Binyu and Guan, Haibing and Chen, Haibo},
   booktitle=sigmod,
   year={2022},
   month=jun,
+}
+
+@inproceedings{zhang22optimizing,
+  title = {Optimizing Data-intensive Systems in Disaggregated Data Centers with {TELEPORT}},
+  author = {Qizhen Zhang and Xinyi Chen and Sidharth Sankhe and Zhilei Zheng and Ke Zhong and Sebastian Angel and Ang Chen and Vincent Liu and Boon Thau Loo},
+  booktitle=sigmod,
+  year = {2022},
+  month=jun
 }
