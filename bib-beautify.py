@@ -13,9 +13,10 @@ import sys
 
 # target_data = open("../23large/ref.bib")
 # target_data = open("../geolis-paper/ref.bib")
-SRC_FILE = "../warbler-paper/ref.bib"
-SRC_FILE = "/Users/shuai/git/causalmesh-paper/paper.bib"
+# SRC_FILE = "../warbler-paper/ref.bib"
+# SRC_FILE = "/Users/shuai/git/causalmesh-paper/paper.bib"
 # SRC_FILE = "../nsf-23-serverless/ref.bib"
+SRC_FILE = "../application/cv/ref.bib"
 TGT_FILE = SRC_FILE
 
 SCRIPT_DIR = os.path.dirname(os.path.realpath(sys.argv[0])) + '/'
